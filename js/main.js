@@ -18,6 +18,7 @@ $(function() {
 		$("#menu").addClass('hide');
 		$("#gameboard").removeClass('hide');
 		$("#timer").text("");
+		$("#points").text("");
 
 		player = 1;
 
@@ -57,6 +58,8 @@ $(function() {
 	                    seconds = "0" + seconds;
 	                }
 	                $("#timer").text("Осталось "+seconds+" c");
+	                count_winner()
+	                $("#points").html("X: "+x_points+" очков<br>O: "+y_points+" очков")
 	            } else {
 	                clearInterval(seconds_timer_id);   
 
@@ -130,6 +133,8 @@ $(function() {
 	}
 
 	function count_winner() {
+
+		x_points = y_points = 0;
 		var before_type=0;
 
 		// проход по строкам
