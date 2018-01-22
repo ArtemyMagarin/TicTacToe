@@ -1,0 +1,66 @@
+#gameheader {}
+
+#gameheader h1, p {
+	text-align: center;
+}
+
+
+#gameboard table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#gameboard th, 
+#gameboard td {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#gameboard table, th,  td {
+    border: 1px solid black;
+}
+
+#menu-wrapper {
+	width: 100%;
+}
+
+#menu {
+	margin: 100px auto;
+	padding: 0 50px 25px 50px;
+	width: 25%;
+	border: 1px solid;
+	border-radius: 10px ;
+}
+
+#menu div, h3 {
+	text-align: center;
+}
+
+#menu table {
+	border-collapse: collapse;
+	margin: -15px auto 10px auto;
+	width: 65%;
+}
+
+#menu td {
+	padding: 10px;
+	border: none;
+}
+
+#menu td:first-child {
+	text-align: left;
+}
+
+#menu td:last-child {
+	text-align: right;
+}
+
+.winner {
+	background-color: green;
+}
+
+.hide {
+	display: none;
+}

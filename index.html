@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TTT</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+</head>
+<body>
+	
+	<div id="gameboard" class="hide">
+
+		<div id="gameheader">
+			<p id="turn"></p>
+			<p id="timer"></p>
+		</div>
+		<table id="game_table"></table>
+	</div>
+	
+	<div id=menu-wrapper>
+		<div id="menu" class="">
+			<h3>Крестики-нолики</h3>
+			<div class="title"></div>
+			<p>Счет:</p>
+			<div class="score">
+				<table>
+					<tr>
+						<td>Крестики</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Нолики</td>
+						<td>0</td>
+					</tr>
+				</table>
+			</div>
+			<p>Новая игра:</p>
+			<div class="newgame-btn">
+				<button onclick="new_game(1)">Классическая игра</button>
+				<button onclick="new_game(2)">Игра на время</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="jquery/jquery-1.12.4.js"></script>
+	<script src="js/coords.js"></script>
+	<script src="js/Scores.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
